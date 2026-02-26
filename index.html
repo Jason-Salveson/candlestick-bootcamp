@@ -124,6 +124,21 @@
             line-height: 1.5;
         }
 
+        /* 10. The Contact Link */
+        .contact-link {
+            display: inline-block; /* Allows us to add margin to the top/bottom */
+            margin-bottom: 20px; 
+            color: #00E676; /* Bullish Green */
+            font-family: 'Space Mono', monospace; /* Uses that terminal font to look highly technical */
+            font-size: 1rem;
+            text-decoration: underline;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-link:hover {
+            opacity: 0.7; /* A subtle fade effect when they hover over it */
+        }
+
         /* 9. Mobile Responsiveness */
         @media (max-width: 600px) {
             
@@ -171,7 +186,11 @@
         <p>At Candlestick Bootcamp, we believe the stock market is a machine, not a lottery. Our mission is to strip away the hype and equip you with the mechanical strategies, strict risk management, and psychological discipline required to survive and thrive. We don't just teach you how to read charts—we teach you how to master your own mind.</p>
     </section>
 
-    <footer>
+   <footer>
+        <p>
+            Got a question about a setup? <br>
+            <a href="mailto:jason@candlestickbootcamp.com?subject=Bootcamp%20Inquiry" class="contact-link">Contact Us: jason@candlestickbootcamp.com</a>
+        </p>
         <p>&copy; 2026 Candlestick Bootcamp. All rights reserved.</p>
         <p class="disclaimer">Disclaimer: Candlestick Bootcamp is for educational purposes only. We are not licensed financial advisors. Trading stocks involves significant risk of loss. Always do your own research or consult with a professional before making any investments.</p>
     </footer>
