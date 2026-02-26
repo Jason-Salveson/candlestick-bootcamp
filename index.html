@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candlestick Bootcamp</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1. The Global Background & Text */
+        body {
+            background-color: #12121A; /* Tactical Charcoal */
+            color: #F8F9FA; /* Basecamp White */
+            font-family: 'Inter', sans-serif; /* Clean, readable body font */
+            margin: 0; 
+            padding: 30px;
+        }
+
+        /* 2. The Headings */
+        h1, h2 {
+            font-family: 'Oswald', sans-serif; /* Bold, structured military font */
+            color: #00E676; /* Bullish Green */
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase; /* Forces the bootcamp vibe */
+        }
+
+        /* 3. The Links */
+        a {
+            color: #00E676;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* 4. The Course Card */
+        .course-card {
+            border: 2px solid #00E676;
+            padding: 20px;
+            /* --- The Mobile Update --- */
+            width: 90%; 
+            max-width: 350px; 
+            box-sizing: border-box;
+            /* ------------------------- */
+            margin: 30px auto; /* Centers the box */
+            border-radius: 8px;
+            background-color: #1A1A24; /* Slightly lighter charcoal to make the card pop */
+        }
+        
+        /* 5. Image Styling */
+        img {
+            display: block;
+            margin: 0 auto 20px auto; /* Centers the image and adds space below it */
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        /* 6. The Navigation Bar */
+        nav {
+            background-color: #1A1A24; /* Matches our course card */
+            padding: 15px;
+            border-bottom: 2px solid #00E676; /* A sharp green line under the nav */
+            margin-bottom: 40px; /* Pushes the rest of the site down */
+        }
+
+        nav ul {
+            list-style-type: none; /* This hides the default bullet points */
+            margin: 0;
+            padding: 0;
+            display: flex; /* This turns on Flexbox, putting items in a row */
+            justify-content: center; /* This centers the links perfectly */
+            gap: 40px; /* This adds equal breathing room between each link */
+        }
+
+        nav a {
+            color: #F8F9FA; /* Basecamp White so it stands out against the dark nav */
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease; /* Makes the hover effect smooth */
+        }
+
+        /* This creates a hover effect when the mouse moves over the link */
+        nav a:hover {
+            color: #00E676; /* Changes the text to Bullish Green */
+        }
+
+        /* 7. The Mission Section */
+        .mission-section {
+            background-color: #1A1A24; /* Matches the course card for consistency */
+            padding: 40px 20px; /* 40px of space on top/bottom, 20px on left/right */
+            margin-top: 50px; /* Pushes it down from the course modules */
+            border-top: 1px solid #00E676;
+            border-bottom: 1px solid #00E676;
+            text-align: center;
+        }
+        
+        /* This makes the paragraph inside the mission section a bit larger and easier to read */
+        .mission-section p {
+            max-width: 600px; /* Prevents the text from stretching too wide on large screens */
+            margin: 0 auto; /* Centers the paragraph block itself */
+            line-height: 1.6; /* Adds breathing room between the lines of text */
+            font-size: 1.1rem; /* Makes the text slightly larger than standard body text */
+        }
+
+        /* 8. The Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px; /* Creates a nice gap below the mission statement */
+            border-top: 2px solid #00E676; /* The green Bootcamp stripe */
+        }
+
+        footer p {
+            color: #A0A0B0; /* A muted gray instead of bright white */
+            font-size: 0.9rem; /* Slightly smaller text */
+        }
+
+        /* Specifically targeting the legal disclaimer to make it even smaller */
+        .disclaimer {
+            font-size: 0.8rem;
+            max-width: 800px; /* Keeps the text from stretching too far */
+            margin: 10px auto 0 auto;
+            color: #707080; /* A darker gray so it fades into the background */
+            line-height: 1.5;
+        }
+
+        /* 9. Mobile Responsiveness */
+        @media (max-width: 600px) {
+            
+            /* When the screen is smaller than 600px, change the nav bar: */
+            nav ul {
+                flex-direction: column; /* Stacks the links vertically instead of horizontally */
+                gap: 15px; /* Shrinks the gap so they aren't too far apart */
+                align-items: center; /* Centers the stacked links perfectly */
+            }
+
+            /* Make the main title slightly smaller on phones so it doesn't wrap awkwardly */
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#modules">Bootcamp Modules</a></li>
+            <li><a href="#tools">Pro Tools (Coming Soon)</a></li>
+        </ul>
+    </nav>
+
+    <h1>Candlestick Bootcamp</h1>
+    <p style="text-align: center;">Welcome to your first step in the stock market.</p>
+
+    <div class="course-card" id="modules">
+        <h2>Module 1: Market Psychology 101</h2>
+        
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/c52PMPlZxFU" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        
+        <ul>
+            <li>Understanding Stocks</li>
+            <li>Your First Trade</li>
+        </ul>
+    </div>
+
+    <section class="mission-section">
+        <h2>Our Mission</h2>
+        <p>At Candlestick Bootcamp, we believe the stock market is a machine, not a lottery. Our mission is to strip away the hype and equip you with the mechanical strategies, strict risk management, and psychological discipline required to survive and thrive. We don't just teach you how to read charts—we teach you how to master your own mind.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Candlestick Bootcamp. All rights reserved.</p>
+        <p class="disclaimer">Disclaimer: Candlestick Bootcamp is for educational purposes only. We are not licensed financial advisors. Trading stocks involves significant risk of loss. Always do your own research or consult with a professional before making any investments.</p>
+    </footer>
+</body>
+</html>
